@@ -1,0 +1,6 @@
+# Optional only; stdlib core has no third-party requirements.
+# Install only the features you need and validate versions in your runtime.
+trafilatura
+beautifulsoup4
+pypdf
+playwright
