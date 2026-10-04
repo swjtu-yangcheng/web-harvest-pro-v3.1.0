@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Harvest Pro"
+  short_description: "跨平台搜索与网页采集，支持断点续爬、网络诊断和逐项证据核验"
+  default_prompt: "请用 $web-harvest-pro 检索并采集所需网络信息，核对来源并输出可追溯结果。"
