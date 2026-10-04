@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Web Harvest Pro Source Record v3",
+  "type": "object",
+  "required": [
+    "id",
+    "url",
+    "retrieved_at",
+    "ok",
+    "status",
+    "quality",
+    "access_method",
+    "title",
+    "source_grade",
+    "relevant_claims"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "final_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "canonical_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "published_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ok": {
+      "type": "boolean"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "quality": {
+      "type": "string"
+    },
+    "error_kind": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "access_method": {
+      "enum": [
+        "http",
+        "playwright",
+        "host_connector",
+        "host_browser",
+        "host_search"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "source_grade": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "unknown"
+      ]
+    },
+    "source_family": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "relevant_claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "content_hash": {
+      "type": "string"
+    },
+    "raw_hash": {
+      "type": "string"
+    },
+    "markdown_path": {
+      "type": "string"
+    },
+    "structured": {
+      "type": "array"
+    },
+    "tables": {
+      "type": "array"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_locations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "additionalProperties": true
+}
